@@ -1,26 +1,16 @@
-import React, { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import React from 'react';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stars } from '@react-three/drei';
-import * as THREE from 'three';
+import { Earth } from './Earth';
 
 const ThreeDScene: React.FC = () => {
-  const earthRef = useRef<THREE.Mesh>(null!);
-
-  useFrame(() => {
-    if (earthRef.current) {
-      earthRef.current.rotation.y += 0.001;
-    }
-  });
-
   return (
-    <Canvas>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} />
-      <mesh ref={earthRef}>
-        <sphereGeometry args={[1, 32, 32]} />
-        <meshStandardMaterial map={new THREE.TextureLoader().load('/earth.jpg')} />
-      </mesh>
-      <OrbitControls />
+    <Canvas camera={{ position: [0, 0, 3], fov: 75 }}>
+      <ambientLight intensity={1.5} /> {/* Increased from 0.5 */}
+      <pointLight position={[10, 10, 10]} intensity={2.0} /> {/* Added intensity */}
+      <directionalLight position={[5, 3, 5]} intensity={1.0} /> {/* Added directional light */}
+      <Earth />
+      <OrbitControls enableZoom={true} />
       <Stars />
     </Canvas>
   );
