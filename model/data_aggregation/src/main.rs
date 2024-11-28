@@ -56,13 +56,15 @@ fn main() {
     let keys = vec![
         "534a5ae3-0e40-49c1-893b-973e6c66f6bb",
         "6ce8ec19-2411-4aec-b354-eee7bc6e8258",
+        "d14fdafe-5958-4cff-aa66-f731c7dbbdb8",
+        "5d49d86f-39ff-422a-92e2-8f82ac9be2b8"
     ];
 
     let file = OpenOptions::new()
         .create(true)
         .write(true)
         .truncate(true)
-        .open("aqi_data.csv")
+        .open("aqi_data_long.csv")
         .expect("Could not create file");
     let wtr = Arc::new(Mutex::new(csv::Writer::from_writer(file)));
 
@@ -115,10 +117,8 @@ fn main() {
         })
         .collect();
 
-    // This line is crucial - it keeps the progress bars updating
     multi_progress.join().unwrap();
 
-    // Wait for all threads to complete
     for handle in handles {
         handle.join().unwrap();
     }
