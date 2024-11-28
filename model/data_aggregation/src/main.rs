@@ -47,9 +47,9 @@ fn fetch_aqi_with_backoff(api_key: &str, lat: f64, lon: f64, attempt: u32) -> Re
 }
 
 fn generate_coordinates(rng: &mut rand::rngs::ThreadRng) -> (f64, f64) {
-    // northern california bounds (+ Bay Area woop woop)
-    let lat = rng.gen_range(36.0..42.0);
-    let lon = rng.gen_range(-124.0..-120.0);
+    // west coast bounds
+    let lat = rng.gen_range(32.5..49.0);
+    let lon = rng.gen_range(-124.8..-114.0);
     (lat, lon)
 }
 
@@ -65,7 +65,11 @@ fn main() {
         "17fef187-705b-49f2-9abc-52658f92fe3a",
         "03aa7ab6-a1c9-4263-b3cd-70921c6a2ecb",
         "74b63d8c-4456-48b7-b7d3-083836266778",
-        "6fa22fb7-c624-46db-999b-82d08b2d0c42"
+        "6fa22fb7-c624-46db-999b-82d08b2d0c42",
+        "7c43724e-2370-47cb-9369-df7968d83706",
+        "2501ddc8-ba0e-4d98-bae9-0b6cd4cc13fd",
+        "60d0910b-6cdf-4c90-932b-7f8fc772d77a",
+        "1c4a9266-0bf0-420b-bc17-14ef097048a6"
     ];
 
     std::fs::create_dir_all("data").expect("Failed to create data directory");
@@ -74,7 +78,7 @@ fn main() {
         .create(true)
         .write(true)
         .truncate(true)
-        .open("data/northern_california_aqi.csv")
+        .open("data/west_coast_aqi.csv")
         .expect("Could not create file");
     let wtr = Arc::new(Mutex::new(csv::Writer::from_writer(file)));
 
