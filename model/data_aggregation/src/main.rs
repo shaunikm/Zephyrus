@@ -47,14 +47,15 @@ fn fetch_aqi_with_backoff(api_key: &str, lat: f64, lon: f64, attempt: u32) -> Re
 }
 
 fn generate_coordinates(rng: &mut rand::rngs::ThreadRng) -> (f64, f64) {
-    // west coast bounds
-    let lat = rng.gen_range(32.5..49.0);
-    let lon = rng.gen_range(-124.8..-114.0);
+    // northern california bounds (+ Bay Area woop woop)
+    let lat = rng.gen_range(37.0..42.0);
+    let lon = rng.gen_range(-124.0..-120.0);
     (lat, lon)
 }
 
 fn main() {
     let keys = vec![
+        /*
         "ef9e9972-b9ea-402a-9a37-f1594109e945",
         "6ce8ec19-2411-4aec-b354-eee7bc6e8258",
         "d14fdafe-5958-4cff-aa66-f731c7dbbdb8",
@@ -66,10 +67,25 @@ fn main() {
         "03aa7ab6-a1c9-4263-b3cd-70921c6a2ecb",
         "74b63d8c-4456-48b7-b7d3-083836266778",
         "6fa22fb7-c624-46db-999b-82d08b2d0c42",
+        */
         "7c43724e-2370-47cb-9369-df7968d83706",
         "2501ddc8-ba0e-4d98-bae9-0b6cd4cc13fd",
         "60d0910b-6cdf-4c90-932b-7f8fc772d77a",
-        "1c4a9266-0bf0-420b-bc17-14ef097048a6"
+        "1c4a9266-0bf0-420b-bc17-14ef097048a6",
+        "3ea37bda-8d82-4e14-998a-44db993e1464",
+        "1b8a40bb-5dac-49e2-ba06-de8f96ce9f52",
+        "1d546c0d-d13a-4d64-8a97-9b0b8c57fa7c",
+        "f248d294-e991-4e25-8021-20baff900ae4",
+        "5eb47c43-c0b5-40f1-a460-2aabee175adf",
+        "ce184056-52ca-4f11-a231-3ad8b1b14cda",
+        "af2038b5-232c-4204-8677-83c31a395a14",
+        "9788d08c-f6f4-4b0d-b763-442afb79a7f8",
+        "875fc496-0e4f-4495-9638-579bd94dd6d2",
+        "c46653eb-c137-49ca-b3c9-0176953cf28a",
+        "042ccca5-3e4c-47ed-aea1-8154b4e153e6",
+        "fc8ef49d-ad74-4398-b1cb-314d281cd9f1",
+        "f970c677-7d04-4b6d-9723-934b23893009",
+        "177c2719-fffc-4383-b0cb-2dec66fcedec"
     ];
 
     std::fs::create_dir_all("data").expect("Failed to create data directory");
