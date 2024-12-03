@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .hero {
@@ -24,8 +25,8 @@ body {
 }
 
 .grid-item {
-    background-color: #333;
-    color: white;
+    background-color: #1e1e1e;
+    color: #ffffff;
     width: 30%;
     height: 200px;
     display: flex;
