@@ -1,44 +1,31 @@
 import React, { Suspense } from 'react';
 import ThreeDScene from './ThreeDScene';
+import ScrollSection from './components/ScrollSection';
 import './App.css';
 
 function App() {
   return (
     <div className="app-container">
-      <header>
-        <nav>
-          <div className="logo">M</div>
-          <div className="nav-links">
-            <a href="#">Interviews</a>
-            <a href="#">Candidates</a>
-            <a href="#">Companies</a>
-            <a href="#">Human Data</a>
-            <a href="#">Blog</a>
+      <ScrollSection>
+        <main>
+          <div className="content-section">
+            <div className="announcement">
+              • The perfect solution to match communities with companies •
+            </div>
+            <h1>Pure Air - Blessed by Zephyrus, Perfected by AI</h1>
+            <p>View the AQI of your home!</p>
+            <div className="cta-buttons">
+              <button className="primary">Learn More!</button>
+              <button className="secondary">Why Zephyrus? →</button>
+            </div>
           </div>
-          <button className="get-started">Get started</button>
-        </nav>
-      </header>
-
-      <main>
-        <div className="content-section">
-          <div className="announcement">
-            Zephyrus raises $32 million to find your next job • <a href="#">Read Forbes</a>
+          <div className="globe-section">
+            <Suspense fallback={<div>Loading...</div>}>
+              <ThreeDScene />
+            </Suspense>
           </div>
-          <h1>Zephyrus matches you with elite opportunities</h1>
-          <p>
-            Join the thousands of candidates around the world using Zephyrus to land their remote dream job with just a single application.
-          </p>
-          <div className="cta-buttons">
-            <button className="primary">Apply for work</button>
-            <button className="secondary">Hire instantly →</button>
-          </div>
-        </div>
-        <div className="globe-section">
-          <Suspense fallback={<div>Loading...</div>}>
-            <ThreeDScene />
-          </Suspense>
-        </div>
-      </main>
+        </main>
+      </ScrollSection>
     </div>
   );
 }

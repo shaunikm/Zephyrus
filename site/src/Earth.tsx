@@ -25,7 +25,7 @@ export function Earth() {
     <mesh ref={earthRef}>
       <sphereGeometry args={[0.35, 12, 12]} />
       <meshStandardMaterial
-        color="#A0D8EF"
+        color="#81C784"
         flatShading={true}
         metalness={0.1}
         roughness={0.8}
