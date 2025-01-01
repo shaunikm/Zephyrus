@@ -4,14 +4,14 @@ import Link from "next/link";
 export default function Footer() {
   const router = useRouter();
   return (
-    <footer className="text-darkvanilla:text-darkvanilla body-font">
-      <div className="container flex flex-col items-center px-10 pb-8 mx-auto border-t border-purple-600 dark:border-purple-300 sm:flex-row">
+    <footer className="text-offwhite:text-offwhite body-font">
+      <div className="container flex flex-col items-center px-10 pb-8 mx-auto border-t border-white dark:border-white sm:flex-row">
         <Link href="/">
-          <a className="flex items-center justify-center mt-3 text-xl font-medium title-font md:ml-3 md:justify-start">
+          <a className="flex items-center justify-center mt-3 text-xl font-medium title-font md:ml-3 md:justify-start text-white dark:text-white">
             ZEPHYRUS
           </a>
         </Link>
-        <div className="invisible h-5 mt-3 ml-4 border-l border-black md:visible dark:border-gray-300"></div>
+        <div className="invisible h-5 mt-3 ml-4 border-l border-white md:visible dark:border-white"></div>
         <a
           className="flex items-center justify-center mt-3 font-medium title-font md:justify-start"
           href={
@@ -20,15 +20,12 @@ export default function Footer() {
               : `https://github.com/minor/plutonium/edit/main/pages${router.pathname}.js`
           }
         >
-          <span className="text-sm md:ml-5">The future of climate defense</span>
+          <span className="text-white md:ml-5">The future of climate defense</span>
         </a>
         <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-3 sm:justify-start">
-          <a
-            aria-label="mail"
-            href="maito:me@saurish.com?subject=From Plutonium!"
-          >
+          <a aria-label="mail">
             <svg
-              className="w-5 h-5"
+              className="w-5 h-5 text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -41,48 +38,40 @@ export default function Footer() {
               />
             </svg>
           </a>
-          <a
-            aria-label="twitter"
-            className="ml-3"
-            href="https://twitter.com/saurishhh"
-          >
+          <a aria-label="twitter" className="ml-3">
             <svg
               fill="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              className="w-5 h-5"
+              className="w-5 h-5 text-white"
               viewBox="0 0 24 24"
             >
               <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
             </svg>
           </a>
-          <a
-            aria-label="instagram"
-            className="ml-3"
-            href="https://instagram.com/saurishhh"
-          >
+          <a aria-label="instagram" className="ml-3">
             <svg
               fill="none"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              className="w-5 h-5"
+              className="w-5 h-5 text-white"
               viewBox="0 0 24 24"
             >
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a aria-label="linkedin" className="ml-3" href="#">
+          <a aria-label="linkedin" className="ml-3">
             <svg
               fill="currentColor"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="0"
-              className="w-5 h-5"
+              className="w-5 h-5 text-white"
               viewBox="0 0 24 24"
             >
               <path
@@ -92,18 +81,14 @@ export default function Footer() {
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
-          <a
-            aria-label="github"
-            className="ml-3"
-            href="https://github.com/minor/plutonium/"
-          >
+          <a aria-label="github" className="ml-3">
             <svg
               width="30"
               height="20"
               viewBox="0 0 25 24"
               fill="none"
               title="GitHub logo"
-              className="w-5 h-5"
+              className="w-5 h-5 text-white"
             >
               <path
                 data-v-54e46119=""
@@ -119,3 +104,4 @@ export default function Footer() {
     </footer>
   );
 }
+
