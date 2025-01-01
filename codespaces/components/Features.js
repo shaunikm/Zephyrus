@@ -4,11 +4,11 @@ export default function Features() {
       <div className="max-w-xl px-4 py-12 mx-auto sm:px-6 lg:max-w-6xl lg:px-8">
         <h1 className="mb-8 text-2xl font-bold tracking-normal text-center text-gray-800 md:leading-tight md:tracking-normal dark:text-gray-200 md:text-4xl">
           Supporting the{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-uranianBlue dark:from-offwhite dark:via-vanilla dark:to-uranianBlue">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-steelBlue dark:from-offwhite dark:via-vanilla dark:to-steelBlue">
             finest
           </span>{" "}
           and{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-uranianBlue dark:from-offwhite dark:via-vanilla dark:to-uranianBlue">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-steelBlue dark:from-offwhite dark:via-vanilla dark:to-steelBlue">
             richest
           </span>{" "}
           features.
@@ -46,7 +46,7 @@ export default function Features() {
                   GNNs are a cost-effective method of creating a denser AQI grid to guarantee in-depth air quality analysis of every community
                 </li>
                 <li className="mb-2">
-                  <span className="text-vanilla dark:text-vanilla px-1 py-0.75 border border-davysgray dark:border-davysgray rounded-md bg-uranianBlue dark:bg-uranianBlue">
+                  <span className="text-vanilla dark:text-vanilla px-1 py-0.75 border border-davysgray dark:border-davysgray rounded-md bg-steelBlue dark:bg-steelBlue">
                     
                   </span>{" "}
                   
@@ -100,7 +100,7 @@ export default function Features() {
                   </span>
                 </li>
                 <li className="mb-2">
-                  <span className="text-p dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-uranianBlue dark:bg-uranianBlue">
+                  <span className="text-p dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-steelBlue dark:bg-steelBlue">
                     
                   </span>
                 </li>
@@ -146,7 +146,7 @@ export default function Features() {
                   through the most powerful machine learning platforms and is 
                 </li>
                 <li className="mb-2">
-                  <span className="text-purple-500 dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-uranianBlue dark:bg-uranianBlue">
+                  <span className="text-purple-500 dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-steelBlue dark:bg-steelBlue">
                     ``
                   </span>{" "}
                   
@@ -187,10 +187,10 @@ export default function Features() {
                 </li>
                 <li className="mb-2">
                   <span className="font-semibold">R</span>: 
-                  <span className="text-vanilla dark:text-vanilla px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-uranianBlue dark:bg-uranianBlue">
+                  <span className="text-vanilla dark:text-vanilla px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-steelBlue dark:bg-steelBlue">
                     ``
                   </span>{" "}
-                  <span className="text-vanilla dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-uranianBlue dark:bg-uranianBlue">
+                  <span className="text-vanilla dark:text-purple-400 px-1 py-0.75 border border-gray-200 dark:border-gray-800 rounded-md bg-steelBlue dark:bg-steelBlue">
                     {}
                   </span>{" "}
                 </li>

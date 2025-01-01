@@ -13,7 +13,7 @@ module.exports = {
         rose: colors.rose,
         teal: colors.teal,
         fuchsia: colors.fuchsia,
-        uranianBlue: "#AFDBF5", // Adding Uranian Blue
+        steelBlue: '#4682B4', // Add Steel Blue color
         vanilla: "#F3E5AB", // Adding Vanilla
         davysgray:'#555555', // Davy's Gray color code
         offwhite:'#f8f8f8', // Off White color code
