@@ -1,3 +1,4 @@
+// Updated index.js
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
@@ -5,18 +6,22 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Sponsors from "../Sponsors";
 import Features from "../Features";
-// Create a container for the app
-const app = document.getElementById('app');
 
-// Render components
-app.innerHTML = `
-  ${Header()}
-  <main>
-    ${Sponsors()}
-  </main>
-  ${Footer()}
-`;
 export default function Home() {
+  // Client-side rendering adjustment (reintroducing logic)
+  if (typeof window !== 'undefined') {
+    const app = document.getElementById('app');
+    if (app) {
+      app.innerHTML = `
+        ${Header()}
+        <main>
+          ${Sponsors()}
+        </main>
+        ${Footer()}
+      `;
+    }
+  }
+
   return (
     <div className="bg-uranianBlue dark:bg-uranianBlue">
       <NextSeo
@@ -66,42 +71,20 @@ export default function Home() {
                 rel="noreferrer"
                 href="https://github.com/minor/plutonium/"
               >
-                <span className="flex justify-center"></span>
+                Learn More
               </a>
               <br className="sm:hidden" />
-              <Link href="404">
+              <Link href="/">
                 <a
                   className="inline-flex items-center px-5 py-3 mt-2 ml-0 text-sm font-medium text-vanilla transition duration-300 border rounded shadow dark:hover:border-gray-500 hover:shadow-md md:ml-2 dark:text-gray-300"
-                  aria-label="learn more"
+                  aria-label="return home"
                 >
-                  <span className="flex justify-center"></span>
+                  Return Home
                 </a>
               </Link>
             </div>
           </div>
-          <div className="relative w-full py-10 mx-auto text-center md:py-32 md:my-12 md:w-10/12">
-            <div className="relative z-10">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://unsplash.com/photos/e9TrFZZ72DQ"
-              >
-                <img
-                  className="transition duration-700 shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 hover:transform hover:scale-105"
-                  src="/images/placeholder.webp"
-                  alt="Placeholder Image"
-                />
-              </a>
-            </div>
-            <p className="z-10 my-8 text-sm font-medium text-darkvanilla">
-              illuminating a path to helping those in need
-            </p>
-          </div>
         </div>
-        {/* <div
-          style={{ backgroundImage: "url(/images/blur.png)" }}
-          className="absolute inset-0 w-full h-full bg-bottom bg-no-repeat bg-cover -z-1"
-        /> */}
       </section>
       <Sponsors />
       <Features />
