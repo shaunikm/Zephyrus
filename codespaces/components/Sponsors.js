@@ -12,54 +12,7 @@ export default function Sponsors() {
           View the demo below!
         </p>
         <div className="grid grid-cols-2 gap-8 mt-6 md:grid-cols-4">
-          <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
-            <svg
-              
-            >
-              <path fill="currentColor" d="M0 0h200v200H0z" />
-              <text
-               
-              >
-                nd
-              </text>
-            </svg>
-          </div>
-          <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
-            <svg
-              
-            >
-              <path fill="currentColor" d="M0 0h200v200H0z" />
-              <text
-                
-              >
-                nd
-              </text>
-            </svg>
-          </div>
-          <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
-            <svg
-              
-            >
-              <path fill="currentColor" d="M0 0h200v200H0z" />
-              <text
-              
-              >
-                nd
-              </text>
-            </svg>
-          </div>
-          <div className="flex justify-center col-span-1 md:col-span-2 lg:col-span-1">
-            <svg
-              
-            >
-              <path fill="currentColor" d="M0 0h200v200H0z" />
-              <text
-               
-              >
-                nd
-              </text>
-            </svg>
-          </div>
+          {/* Removed SVG boxes */}
         </div>
       </div>
     </section>
