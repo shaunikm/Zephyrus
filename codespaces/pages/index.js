@@ -42,7 +42,7 @@ export default function Home() {
               Pure Air
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-darkvanilla dark:from-offwhite dark:via-vanilla dark:to-darkvanilla">
-                Blessed by Zephyrus, Perfected by AI.
+                Blessed by Zephryus, Perfected by AI.
               </span>
             </h1>
             <p className="max-w-xl pt-5 mx-auto text-lg text-vanilla dark:text-vanilla md:text-lg">
