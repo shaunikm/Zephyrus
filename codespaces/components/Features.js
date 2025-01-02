@@ -9,7 +9,7 @@ export default function Features() {
           </span>{" "}
           and{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-neutralgray dark:from-offwhite dark:via-vanilla dark:to-neutralgray">
-            richest
+            most effective
           </span>{" "}
           features.
         </h1>

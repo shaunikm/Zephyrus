@@ -46,9 +46,8 @@ export default function Home() {
               </span>
             </h1>
             <p className="max-w-xl pt-5 mx-auto text-lg text-vanilla dark:text-vanilla md:text-lg">
-              Zephryus is the most recent evolution of air quality technology. 
-              Revolutionary sensors combined with enhanced AI models 
-              ensures that every community can be supplied with filters!
+              Zephryus is the most recent evolution of air quality tracking and protection. Over a third (120 million) of Americans live without air quality trackers.
+              
             </p>
             <div className="mt-6 text-center md:ml-6">
               <a
