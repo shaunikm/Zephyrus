@@ -118,7 +118,7 @@ export default function Features() {
             <p className="mx-2 font-normal text-vanilla dark:text-vanilla text-md">
               <ul className="mr-0 md:mr-10">
                 <li className="mb-2">
-                  Convolutional Neural Networks: Cutting-edge AI architectures designed to efficiently process and analyze visual data, 
+                  Convolutional Neural Networks: Advanced AI architectures designed to efficiently process and analyze visual data, 
                   powering advancements in image recognition and computer vision.
                 </li>
                 <li className="mb-2">

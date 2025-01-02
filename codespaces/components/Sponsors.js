@@ -15,7 +15,7 @@ export default function Sponsors() {
         
         {/* New Subtitle */}
         <h3 className="mb-8 text-lg font-medium tracking-normal text-center text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-neutralgray dark:from-offwhite dark:via-vanilla dark:to-neutralgray md:leading-tight md:tracking-normal dark:text-offwhite md:text-xl">
-  Companies can use our live tracker to distribute filters to 111 million unprotected individuals.
+  Companies can use our live tracker to distribute filters to 223 million unprotected individuals.
 </h3>
 
         

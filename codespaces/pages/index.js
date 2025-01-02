@@ -47,7 +47,6 @@ export default function Home() {
             </h1>
             <p className="max-w-xl pt-5 mx-auto text-lg text-vanilla dark:text-vanilla md:text-lg">
               Zephryus is the most recent evolution of air quality tracking and protection. Over a third (120 million) of Americans live without air quality trackers.
-              
             </p>
             <div className="mt-6 text-center md:ml-6">
               <a
@@ -68,6 +67,14 @@ export default function Home() {
                 </a>
               </Link>
             </div>
+
+            {/* Added Space Between Buttons and Subtitle */}
+            <div className="mt-8"></div> {/* Space between buttons and subtitle */}
+
+            {/* Gradient Subtitle */}
+            <h3 className="mb-8 text-lg font-medium tracking-normal text-center text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-neutralgray dark:from-offwhite dark:via-vanilla dark:to-neutralgray md:leading-tight md:tracking-normal dark:text-offwhite md:text-xl">
+              Low-Income Communities (LIC) face harsher air quality, with nearly twice as much pollutant concentration in some areas.
+            </h3>
           </div>
         </div>
       </section>

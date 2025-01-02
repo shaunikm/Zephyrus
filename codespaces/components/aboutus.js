@@ -27,7 +27,7 @@ const AboutUs = () => {
               alt="Vision"
             />
             <p className="text-lg text-vanilla dark:text-vanilla">
-              Ayush Iyengar (17), junior at Bellarmine College Prep, working to address local problems from tribal
+              Ayush Iyengar
             </p>
           </div>
 
@@ -42,8 +42,7 @@ const AboutUs = () => {
               alt="Team"
             />
             <p className="text-lg text-vanilla dark:text-vanilla">
-              A talented and dedicated team works every day to innovate and improve
-              air quality solutions.
+              Shaunik Musukula
             </p>
           </div>
           {/* Vanilla Colored Line */}
@@ -57,8 +56,7 @@ const AboutUs = () => {
               alt="Technology"
             />
             <p className="text-lg text-vanilla dark:text-vanilla">
-              Our cutting-edge air filtration technology empowers smarter, cleaner
-              environments.
+              Aarush Gupta
             </p>
           </div>
         </div>
