@@ -73,8 +73,13 @@ export default function Home() {
 
             {/* Gradient Subtitle */}
             <h3 className="mb-8 text-lg font-medium tracking-normal text-center text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-neutralgray dark:from-offwhite dark:via-vanilla dark:to-neutralgray md:leading-tight md:tracking-normal dark:text-offwhite md:text-xl">
-              Low-Income Communities (LIC) face harsher air quality, with nearly twice as much pollutant concentration in some areas.
+              Low-Income Communities (LIC) face harsher air quality, with almost double the pollutant concentration in some areas
             </h3>
+
+            {/* Offwhite, Smaller Centered Text Line */}
+            <p className="text-sm text-offwhite text-center dark:text-offwhite">
+              (From 2004 to 2016, 85% of afflicted residents were Black or Hispanic)
+            </p>
           </div>
         </div>
       </section>
