@@ -1,17 +1,18 @@
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import Header from "../components/Header"; // Adjusted path
-import Footer from "../components/Footer"; // Adjusted path
-import Sponsors from "../components/Sponsors"; // Adjusted path
-import Features from "../components/Features"; // Adjusted path
+import Header from "../components/Header"; 
+import Footer from "../components/Footer"; 
+import Sponsors from "../components/Sponsors"; 
+import Features from "../components/Features"; 
+import AboutUs from "../components/AboutUs";  // Import AboutUs
 
 export default function Home() {
   return (
     <div className="bg-feldgrau dark:bg-feldgrau">
       <NextSeo
-        title="Zephryus"
-        description="Zephryus – where darkness meets the web."
+        title="Zephyrus"
+        description="Zephyrus – where darkness meets the web."
         canonical="https://plutonium.vercel.app/"
         openGraph={{
           url: "https://plutonium.vercel.app/",
@@ -73,6 +74,7 @@ export default function Home() {
       </section>
       <Sponsors />
       <Features />
+      <AboutUs /> {/* Added AboutUs component here */}
       <Footer />
     </div>
   );
