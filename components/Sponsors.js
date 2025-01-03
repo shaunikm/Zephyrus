@@ -15,9 +15,8 @@ export default function Sponsors() {
         
         {/* New Subtitle */}
         <h3 className="mb-8 text-lg font-medium tracking-normal text-center text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-neutralgray dark:from-offwhite dark:via-vanilla dark:to-neutralgray md:leading-tight md:tracking-normal dark:text-offwhite md:text-xl">
-  Companies can use our live tracker to distribute filters to 223 million unprotected individuals.
-</h3>
-
+          Companies can use our live tracker to distribute filters to 223 million unprotected individuals.
+        </h3>
         
         {/* YouTube Video */}
         <div className="flex justify-center">
@@ -33,6 +32,17 @@ export default function Sponsors() {
           ></iframe>
         </div>
         
+        {/* Image Below the Video (Smaller with gap re-added) */}
+        <div className="mt-8 flex justify-center">
+          <img
+            src="demomodel.webp"  // Changed to demomodel.webp
+            alt="Demo Model Image"
+            width="500"  // Smaller width
+            height="445"  // Smaller height
+            className="rounded-md shadow-lg"
+          />
+        </div>
+
         {/* Placeholder for Grid Content */}
         <div className="grid grid-cols-2 gap-8 mt-6 md:grid-cols-4">
           {/* Removed SVG boxes */}
