@@ -1,4 +1,26 @@
+import { useEffect, useState } from "react";
+
 export default function Features() {
+  const [isInView, setIsInView] = useState(false);
+
+  // Create an intersection observer to detect when elements are in the viewport
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const elements = document.querySelectorAll(".fade-element");
+    elements.forEach((element) => observer.observe(element));
+
+    return () => {
+      elements.forEach((element) => observer.unobserve(element));
+    };
+  }, []);
+
   return (
     <section id="features" className="py-0"> {/* Reduced padding-top to py-6 */}
       <div className="max-w-xl px-4 py-12 mx-auto sm:px-6 lg:max-w-6xl lg:px-8">
@@ -17,7 +39,7 @@ export default function Features() {
           Simultaneously tracking and protecting through...
         </p>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="mb-10 space-y-6">
+          <div className="mb-10 space-y-6 fade-element">
             <h1 className="text-xl font-bold text-center text-offwhite dark:text-offwhite md:text-2xl sm:text-left">
               GNNs
             </h1>
@@ -42,7 +64,7 @@ export default function Features() {
               </ul>
             </p>
           </div>
-          <div className="mb-10 space-y-6">
+          <div className="mb-10 space-y-6 fade-element">
             <h1 className="text-xl font-bold text-center text-offwhite dark:text-offwhite md:text-2xl sm:text-left">
               Infrared Spectroscopy Sensors
             </h1>
@@ -77,7 +99,7 @@ export default function Features() {
               </ul>
             </p>
           </div>
-          <div className="mb-10 space-y-6">
+          <div className="mb-10 space-y-6 fade-element">
             <h1 className="text-xl font-bold text-center text-offwhite dark:text-offwhite md:text-2xl sm:text-left">
               Cutting-Edge Tech
             </h1>
@@ -104,7 +126,7 @@ export default function Features() {
               </ul>
             </p>
           </div>
-          <div className="mb-10 space-y-6">
+          <div className="mb-10 space-y-6 fade-element">
             <h1 className="text-xl font-bold text-center text-offwhite dark:text-offwhite md:text-2xl sm:text-left">
               CNNs
             </h1>

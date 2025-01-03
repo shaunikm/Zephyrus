@@ -20,7 +20,7 @@ export default function Header() {
   const headerStyle = {
     opacity: Math.max(1 - scrollY / 300, 0), // Fades out gradually
     transform: `translateY(-${Math.min(scrollY, 100)}px)`, // Moves the header up gradually
-    transition: "transform 0.45s ease, opacity 0.45s ease", // Smooth transition with 0.45s timing
+    transition: "transform 0.65s ease, opacity 0.65s ease", // Smooth transition with 0.45s timing
   };
 
   return (

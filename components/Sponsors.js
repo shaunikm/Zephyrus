@@ -7,11 +7,26 @@ export default function Sponsors() {
           Connecting filtration distributors with low-income communities
         </h1>
         
-        {/* Subtitle */}
-        <p className="max-w-md mx-auto mb-6 text-lg text-vanilla dark:text-vanilla text-left md:text-center md:text-lg">
-          A one-of-a-kind AI model combined with a cost-effective pollutant detector allows us to create
-          a denser AQI grid, ensuring no community is left unnoticed!
-        </p>
+        {/* Gradient Card and Image Side by Side */}
+        <div className="flex justify-center items-center mb-6 space-x-6">
+          {/* Gradient Card */}
+          <div className="p-6 bg-gradient-to-r from-offwhite via-vanilla to-neutralgray dark:from-offwhite dark:via-vanilla dark:to-neutralgray rounded-xl shadow-lg w-80">
+            <p className="text-lg text-center text-feldgrau dark:text-feldgrau">
+            Our unique AI model and cost-effective pollutant detector create a denser AQI grid, ensuring every community is covered!
+            </p>
+          </div>
+          
+          {/* Demo Model Image */}
+          <div>
+            <img
+              src="demomodel.webp"  // Changed to demomodel.webp
+              alt="Demo Model Image"
+              width="300"  // Smaller width for alignment
+              height="267"  // Adjusted height
+              className="rounded-md shadow-lg"
+            />
+          </div>
+        </div>
         
         {/* New Subtitle */}
         <h3 className="mb-8 text-lg font-medium tracking-normal text-center text-transparent bg-clip-text bg-gradient-to-r dark:bg-gradient-to-r from-offwhite via-vanilla to-neutralgray dark:from-offwhite dark:via-vanilla dark:to-neutralgray md:leading-tight md:tracking-normal dark:text-offwhite md:text-xl">
@@ -30,22 +45,6 @@ export default function Sponsors() {
             allowFullScreen
             className="rounded-lg shadow-lg"
           ></iframe>
-        </div>
-        
-        {/* Image Below the Video (Smaller with gap re-added) */}
-        <div className="mt-8 flex justify-center">
-          <img
-            src="demomodel.webp"  // Changed to demomodel.webp
-            alt="Demo Model Image"
-            width="500"  // Smaller width
-            height="445"  // Smaller height
-            className="rounded-md shadow-lg"
-          />
-        </div>
-
-        {/* Placeholder for Grid Content */}
-        <div className="grid grid-cols-2 gap-8 mt-6 md:grid-cols-4">
-          {/* Removed SVG boxes */}
         </div>
       </div>
     </section>
