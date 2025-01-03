@@ -49,13 +49,13 @@ export default function Home() {
               Zephryus is the most recent evolution of air quality tracking and protection. Over a third (120 million) of Americans live without air quality trackers.
             </p>
 
-            {/* Resized Image */}
+            {/* Placeholder image */}
             <div className="mt-8 flex justify-center">
               <img
                 src="zephyrusaqi.webp"
                 alt="Air Quality Visualization"
-                width="500"  // Resized width
-                height="600"  // Resized height
+                width="775"
+                height="900"
                 className="rounded-md shadow-lg"
               />
             </div>
