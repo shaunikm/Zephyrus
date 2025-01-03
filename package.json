@@ -25,5 +25,8 @@
     "postcss": "^8.1.10",
     "sass": "^1.83.0",
     "tailwindcss": "^2.1.1"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
