@@ -19,7 +19,7 @@ export default function Sponsors() {
               style={{
                 backgroundImage: `url('/windback.webp')`,
                 backgroundSize: "40%",
-                backgroundPosition: "left",
+                backgroundPosition: "leftW",
                 transform: "rotate(45deg)",
                 opacity: 0.3,
                 filter: "brightness(0) saturate(100%) grayscale(1)",
