@@ -52,7 +52,7 @@ export default function Sponsors() {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/u31qwQUeGuM"
+            src="https://www.youtube.com/embed/rujY4nIlzQ0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

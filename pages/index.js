@@ -46,7 +46,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="max-w-xl pt-5 mx-auto text-lg text-vanilla dark:text-vanilla md:text-lg">
-            Zephyrus is the latest evolution in air quality tracking, addressing the fact that over 120 million Americans, mainly in low-income areas, lack affordable air quality sensors..
+            Zephyrus is the latest evolution in air quality tracking, providing support to the over 120 million Americans, mainly in low-income areas, that lack affordable air quality sensors..
             </p>
 
             {/* Placeholder image */}

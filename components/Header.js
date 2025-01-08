@@ -38,7 +38,7 @@ export default function Header() {
         {/* Social Media Icons */}
         <div className="flex items-center space-x-4">
           {/* GitHub Icon */}
-          <a href="https://github.com/shaunikm/Zephyrus/tree/main/codespaces" aria-label="GitHub">
+          <a href="https://github.com/shaunikm/Zephyrus" aria-label="GitHub">
             <svg
               width="24"
               height="24"
