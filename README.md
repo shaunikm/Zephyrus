@@ -1,17 +1,16 @@
 <div align="center">
-   <img src="model/assets/logo.svg" width="200" alt="Doodle Logo"/>
-    <h1>Doodle</h1>
-
-    [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-orange)](https://scikit-learn.org/stable/)
-    [![NumPy](https://img.shields.io/badge/NumPy-2.1-blue)](https://numpy.org/)
-    [![pandas](https://img.shields.io/badge/pandas-2.2.3-green)](https://pandas.pydata.org/)
-    [![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-red)](https://pytorch.org/)
-
-    <div align="center">Created by Shaunik Musukula and Aarush Gupta</div>
-    <br>
+  <img src="model/assets/logo.svg" width="200" alt="Doodle Logo"/>
+  <h1>Zephyrus</h1>
+  
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-orange?logo=scikit-learn)](https://scikit-learn.org/stable/)  
+[![NumPy](https://img.shields.io/badge/NumPy-2.1-blue?logo=numpy)](https://numpy.org/)  
+[![pandas](https://img.shields.io/badge/pandas-2.2.3-green?logo=pandas)](https://pandas.pydata.org/)  
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-red?logo=pytorch)](https://pytorch.org/)
 </div>
 
-[![Zephyrus Demo](https://www.youtube.com/watch?v=rujY4nIlzQ0/0.jpg)](https://www.youtube.com/watch?v=rujY4nIlzQ0)
+<div align="center">Created by Shaunik Musukula and Aarush Gupta</div>
+
+[![Zephyrus Demo](https://img.youtube.com/vi/rujY4nIlzQ0/0.jpg)](https://www.youtube.com/watch?v=rujY4nIlzQ0)
 
 ---
 
