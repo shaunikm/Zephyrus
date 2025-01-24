@@ -62,8 +62,11 @@ Using FDM, we compute AQI values over a grid defined by lat and long. For each g
 
 1. Define the grid as:
 
-$$\text{Latitude grid: } \{x_i \mid i = 1, \dots, n\},
-\quad \text{Longitude grid: } \{y_j \mid j = 1, \dots, m\}$$
+$$
+\text{\Large Latitude grid: } \{x_i \mid i = 1, \dots, n\}, \quad 
+\text{\Large Longitude grid: } \{y_j \mid j = 1, \dots, m\}
+$$
+
 
 
 2. We calculate weights based on the inverse distance:
