@@ -58,7 +58,7 @@ We used FDM to create a dense grid with the sparse data points via spatial inter
 
 $$\vec{y}_{n+1} = \vec{y}_n + h \vec{F}(\vec{y}_n, t_n).$$
 
-Using FDM, we compute AQI values over a grid defined by lat and long. For each grid point \((i, j)\):
+Using FDM, we compute AQI values over a grid defined by lat and long. For each grid point $$(i, j)$$:
 
 1. Define the grid as:
 
