@@ -1,9 +1,9 @@
 <svg fill="none" height="800px" width="800px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" xmlns:xlink="http://www.w3.org/1999/xlink">
   <!-- Background -->
-  <rect x="0" y="0" width="600" height="600" rx="60" fill="#A8D5BA"/>
+  <rect x="0" y="0" width="600" height="400" rx="60" fill="#A8D5BA"/>
 
   <!-- Cloud Icon -->
-  <g transform="translate(50, 100) scale(1)" fill="#FFFFFF">
+  <g transform="translate(50, 5) scale(1)" fill="#FFFFFF">
     <path d="M493.609,207.138c-9.949-13.301-23.718-23.639-39.172-29.504c-2.354-26.829-14.217-51.7-33.736-70.504
       C399.864,87.055,372.447,76,343.5,76c-9.62,0-19.168,1.238-28.447,3.684C289.97,56.639,257.631,44,223.5,44
       c-27.572,0-54.102,8.246-76.719,23.846c-20.784,14.335-37.015,33.94-47.164,56.907C43.39,130.734,0,178.501,0,235.5
