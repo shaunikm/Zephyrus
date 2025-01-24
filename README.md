@@ -16,7 +16,11 @@
   </a>
 </div>
 
+<br>
+
 <div align="center">Created by Shaunik Musukula and Aarush Gupta</div>
+
+<br>
 
 <div align="center">
 
