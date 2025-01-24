@@ -54,7 +54,7 @@ Zephyrus uses model archutectures that use a Geospatial Neural Network (GNN), Fi
 
 ### FDM (Finite Difference Method)
 
-We used FDM to create a dense grid with the sparse data points via spatial interpolation. Euler's method employed in this project is defined as:
+We used FDM to create a dense grid with the sparse data points via spatial interpolation. Euler's method used in this project is defined as:
 
 $$\vec{y}_{n+1} = \vec{y}_n + h \vec{F}(\vec{y}_n, t_n).$$
 
