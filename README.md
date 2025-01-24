@@ -2,10 +2,18 @@
   <img src="model/assets/logo.svg" width="200" alt="Doodle Logo"/>
   <h1>Zephyrus</h1>
   
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-orange?logo=scikit-learn)](https://scikit-learn.org/stable/)  
-[![NumPy](https://img.shields.io/badge/NumPy-2.1-blue?logo=numpy)](https://numpy.org/)  
-[![pandas](https://img.shields.io/badge/pandas-2.2.3-green?logo=pandas)](https://pandas.pydata.org/)  
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1-red?logo=pytorch)](https://pytorch.org/)
+  <a href="https://scikit-learn.org/stable/">
+    <img src="https://img.shields.io/badge/scikit--learn-1.7-orange?logo=scikit-learn" alt="scikit-learn">
+  </a>
+  <a href="https://numpy.org/">
+    <img src="https://img.shields.io/badge/NumPy-2.1-blue?logo=numpy" alt="NumPy">
+  </a>
+  <a href="https://pandas.pydata.org/">
+    <img src="https://img.shields.io/badge/pandas-2.2.3-green?logo=pandas" alt="pandas">
+  </a>
+  <a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/PyTorch-2.5.1-red?logo=pytorch" alt="PyTorch">
+  </a>
 </div>
 
 <div align="center">Created by Shaunik Musukula and Aarush Gupta</div>
