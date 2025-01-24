@@ -61,14 +61,19 @@ $$\vec{y}_{n+1} = \vec{y}_n + h \vec{F}(\vec{y}_n, t_n).$$
 Using FDM, we compute AQI values over a grid defined by lat and long. For each grid point \((i, j)\):
 
 1. Define the grid as:
+
 $$\text{Latitude grid: } \{x_i \mid i = 1, \dots, n\},
 \quad \text{Longitude grid: } \{y_j \mid j = 1, \dots, m\}$$
 
+
 2. We calculate weights based on the inverse distance:
+
 $$W_{i,j} = \frac{1}{\sqrt{(x - x_i)^2 + (y - y_j)^2} + \epsilon},$$
-where \(\epsilon = 1 \times 10^{-5}\) to prevent division by zero.
+
+where $$\epsilon = 1 \times 10^{-5}$$ to prevent division by zero.
 
 3. Aggregation of AQI values:
+
 $$AQI_{i,j} = \frac{\sum_{k=1}^{n} W_{i,j} \cdot AQI_k}{\sum_{k=1}^{n} W_{i,j}}$$
 
 ---
