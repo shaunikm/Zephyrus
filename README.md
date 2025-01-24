@@ -10,7 +10,11 @@
 
 <div align="center">Created by Shaunik Musukula and Aarush Gupta</div>
 
+<div align="center">
+
 [![Zephyrus Demo](https://img.youtube.com/vi/rujY4nIlzQ0/0.jpg)](https://www.youtube.com/watch?v=rujY4nIlzQ0)
+
+</div>
 
 ---
 
