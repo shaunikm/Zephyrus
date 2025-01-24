@@ -34,9 +34,7 @@
 - [<code>⚙️ Introduction</code>](#%EF%B8%8F-introduction)
 - [<code>📐 The Math / Structure</code>](#%EF%B8%8F-t)
 - [<code>📂 Directory Structure</code>](#-directory-structure)
-- [<code>🚀 Usage</code>](#-usage)
 - [<code>📊 Benchmarks</code>](#-benchmarks)
-- [<code>🙏 Acknowledgments</code>](#-acknowledgments)
 
 ---
 
@@ -78,31 +76,6 @@ where $$\epsilon = 1 \times 10^{-5}$$ to prevent division by zero.
 3. Aggregation of AQI values:
 
 $$AQI_{i,j} = \frac{\sum_{k=1}^{n} W_{i,j} \cdot AQI_k}{\sum_{k=1}^{n} W_{i,j}}$$
-
----
-
-## 📂 Directory Structure
-
-```
-GeoSpatialNN/
-├── .github/
-├── .next/
-├── components/
-├── model/                    # model-related files
-│   └── data/                 # all data necessary for model implementation
-│   └── src/                  # src files for the model
-│       └── geospatialnn.ipynb # primary notebook for the model
-├── out/
-├── pages/
-├── public/
-├── styles/
-├── .gitignore
-├── package.json
-├── yarn.lock
-├── postcss.config.js
-├── tailwind.config.js
-└── LICENSE
-```
 
 ---
 
